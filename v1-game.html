@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space-Arcade</title>
+
+    <style>
+        h1{
+            color : whitesmoke; 
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        #welcome-heading{
+            display: flex;
+            justify-content: center;
+        }   
+
+        span{
+            color: red;
+        }
+
+        canvas{
+            border:5px solid whitesmoke;
+        }
+
+        #canvas-container{
+            display: flex;
+            justify-content: center;
+            margin-left: 125px;
+        }
+
+        #button-restart{
+            display: flex; 
+            justify-content: right;
+            margin-left: 50px;
+            align-items: center;
+        }
+
+        button{
+            height: 50px; 
+            width: 100px;
+
+            background-color: black;
+            border: 1px solid white;
+            color : lightgreen;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="welcome-heading">
+        <h1>Welcome to <span>Space Arcade</span></h1>
+    </div>
+      
+    <div id="canvas-container">
+        <canvas id="game-canvas" width="480" height="640"></canvas>
+
+        <div id = "button-restart">
+             <button onclick="restartGame()">Restart</button>
+        </div>
+    </div>
+
+    <script src="v1-script.js"></script>
+</body>
+</html>
